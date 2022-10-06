@@ -3,12 +3,13 @@
     --bs-green: #8cbc00;
 }
 html {
-    font-size: 62.5%;  /* 1 rem = 10px **/
+    font-size: 62.5%; 
 }
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    margin: 5em;
 }
 
 h1, h2, h3 {
@@ -40,7 +41,6 @@ h3 {
         font-size: 3rem;
     }
 }
-/** Reescribir colores */
 .text-primary,
 .nombre-sitio {
     color: var(--bs-blue)!important;
@@ -54,7 +54,7 @@ h3 {
 }
 
 .hero {
-    background-image: url(../img/principal.png);
+    background-image: url(../img/principal.jpg);
     height: 25rem;
     background-size: cover;
     background-position: center center;
@@ -66,7 +66,7 @@ h3 {
     }
 }
 
-/** Productos */
+/*Productos*/
 @media (min-width:768px) {
     .producto img {
         height: 45rem;
@@ -78,6 +78,7 @@ h3 {
 .categoria img {
     transition-property: transform;
     transition-duration: 300ms;
+    min-width: 768px;
 }
 .categoria img:hover {
     transform: scale(1.2);
@@ -90,4 +91,7 @@ h3 {
 .form-control {
     padding: 1rem;
     font-size: 1.6rem;
+}
+.container{
+    text-decoration: none;
 }
